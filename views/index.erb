@@ -1,0 +1,30 @@
+<table class='table' border='1'>
+		<thread>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>1st Favorite Number</th>
+				<th>2nd Favorite Number</th>
+				<th>3rd Favorite Number</th>
+				<th>Favorite Food</th>
+				<th>Favorite Phrase</th>
+        <th>Favorite Color</th>
+        <th>Favorite Season</th>
+			</tr>
+		</thread>
+		 <tbody>
+           <%personaldetails.each do |fav|%>
+           <tr>
+               <td><%=fav["name"] %></td>
+               <td><%=fav["age"] %></td>
+               <td><%=fav["first_favorite_number"] %></td>
+               <td><%=fav["second_favorite_number"] %></td>
+               <td><%=fav["third_favorite_number"] %></td>
+               <td><%=fav["favorite_food"] %></td>
+               <td><%=fav["favorite_phrase"] %></td>
+               <td><%=fav["favorite_color"] %></td>
+               <td><%=fav["favorite_season"] %></td>
+           </tr>
+           <%end%>
+    </tbody>
+</table>
