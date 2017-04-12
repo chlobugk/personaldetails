@@ -58,6 +58,12 @@ post '/update' do
 	redirect '/'
 end
 
+post '/delete' do
+	trash = params[:trash]
+db.exec("DELETE FROM personaldetails WHERE name = '#{trash}' ");
+redirect '/'
+end	
+
 
 
 
