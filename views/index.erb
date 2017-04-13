@@ -28,7 +28,7 @@
            <%end%>
     </tbody>
 </table><br>
-
+Add someone to the favorite chart below.
 <form method='post' action='personaldetails'>
   <input type='text' name='name' placeholder="Name"><br>
   <input type='text' name='age' placeholder="Age"><br>
@@ -43,7 +43,7 @@
 </form>
 
 <form action="update" method="post">
-What would you like to change?
+What would you like to update?
   <select name='fav'>
     <option value='1'>Name</option>
     <option value='2'>Age</option>
@@ -59,8 +59,9 @@ What would you like to change?
   <input type='text' name='old_fav' placeholder="Name"><br>
   <input type='text' name='new_fav' placeholder="New Favorite"><br>
   <input type='submit' value='Update' class='submit'>
-</form><p>
+</form><p></p>
 
+Delete a person below.
 <form action='delete' method='post'>
   <input type='text' name='trash' placeholder="Name"><br>
   <input type='submit' value='Delete Person' class='submit'>
