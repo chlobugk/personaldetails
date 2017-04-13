@@ -1,1 +1,3 @@
 local_env.rb
+.env
+-a favorites-data .env
